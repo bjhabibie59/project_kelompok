@@ -1,7 +1,11 @@
 <?php
-$angka1 = $_POST;
-$angka2 = $_POST;
-$hasil1 = $angka1 + $angka2 ;
+$hasil1 = "";
+if (isset($_POST['angka1']) && isset($_POST['angka2'])) {
+    # code...
+    $angka1 = $_POST['angka1'];
+    $angka2 = $_POST['angka2'];
+    $hasil1 = $angka1 + $angka2 ;
+}
 
 // $angka1 = 20 ;
 // $angka2 = 30 ;
@@ -16,12 +20,12 @@ $hasil1 = $angka1 + $angka2 ;
     <title>Document</title>
 </head>
 <body>
-    <table border="1px">
+    <table border="1">
         <tr>
             <td>Nilai</td>
         </tr>
         <tr>
-            <td><?php echo $hasil1 ?></td>
+            <td><input type="text" value="<?= $hasil1 ?>"></td>
         </tr>
         <!-- <tr>
             <td><?php echo $hasil2 ?></td>
@@ -29,9 +33,9 @@ $hasil1 = $angka1 + $angka2 ;
     </table>
     <form action="" method="post">
         Angka 1:
-        <input type="text" name="$angka1">
+        <input type="text" name="angka1">
         Angka 2:
-        <input type="text" name="$angka2">
+        <input type="text" name="angka2">
         <input type="submit" value="Hitung">
     </form>
 </body>
