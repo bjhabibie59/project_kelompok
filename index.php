@@ -1,11 +1,11 @@
 <?php
-$angka1 = 20 ;
-$angka2 = 30 ;
+$angka1 = $_POST;
+$angka2 = $_POST;
 $hasil1 = $angka1 + $angka2 ;
 
-$angka1 = 20 ;
-$angka2 = 30 ;
-$hasil2 = $angka1 - $angka2 ;
+// $angka1 = 20 ;
+// $angka2 = 30 ;
+// $hasil2 = $angka1 - $angka2 ;
 
 ?>
 <!DOCTYPE html>
@@ -23,9 +23,9 @@ $hasil2 = $angka1 - $angka2 ;
         <tr>
             <td><?php echo $hasil1 ?></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td><?php echo $hasil2 ?></td>
-        </tr>
+        </tr> -->
     </table>
     <form action="" method="post">
         Angka 1:
