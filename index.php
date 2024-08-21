@@ -6,11 +6,6 @@ if (isset($_POST['angka1']) && isset($_POST['angka2'])) {
     $angka2 = $_POST['angka2'];
     $hasil1 = $angka1 + $angka2 ;
 }
-
-// $angka1 = 20 ;
-// $angka2 = 30 ;
-// $hasil2 = $angka1 - $angka2 ;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +22,6 @@ if (isset($_POST['angka1']) && isset($_POST['angka2'])) {
         <tr>
             <td><input type="text" value="<?= $hasil1 ?>"></td>
         </tr>
-        <!-- <tr>
-            <td><?php echo $hasil2 ?></td>
-        </tr> -->
     </table>
     <form action="" method="post">
         Angka 1:
