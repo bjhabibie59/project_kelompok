@@ -27,5 +27,12 @@ $hasil2 = $angka1 - $angka2 ;
             <td><?php echo $hasil2 ?></td>
         </tr>
     </table>
+    <form action="" method="post">
+        Angka 1:
+        <input type="text" name="$angka1">
+        Angka 2:
+        <input type="text" name="$angka2">
+        <input type="submit" value="Hitung">
+    </form>
 </body>
 </html>
